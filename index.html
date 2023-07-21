@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="tic-tac-toe" class="tic-tac-toe">
+      <div disabled id="1" class="cell"></div>
+      <div id="2" class="cell"></div>
+      <div id="3" class="cell"></div>
+      <div id="4" class="cell"></div>
+      <div id="5" class="cell"></div>
+      <div id="6" class="cell"></div>
+      <div id="7" class="cell"></div>
+      <div id="8" class="cell"></div>
+      <div id="9" class="cell"></div>
+    </div>
+
+    <div class="score">
+      <div class="player-1">
+        <p class="player">Игрок <small>1</small> (X)</p>
+        <p class="player-score player-1-score">0</p>
+      </div>
+      <div class="draw">
+        <p class="player">-</p>
+        <p class="player-score draw-score">0</p>
+      </div>
+
+      <div class="player-2">
+        <p class="player">Игрок <small>2</small> (O)</p>
+        <p class="player-score player-2-score">0</p>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="result-images">
+            <img class="winner-name" src="" alt="winner" />
+            <img class="forDraw" src="images/o-mark.svg" alt="draw" />
+            <!-- <img class="" src="images/o-mark.svg" alt="draw" /> -->
+            <!-- <img class="" src="images/xmark.svg" alt="draw" /> -->
+          </div>
+          <!-- <img class="winner-name" src="" alt="winner" /> -->
+          <p class="gameResult"></p>
+        </div>
+        <div class="modal-body">
+          <button class="continue-btn">продолжить</button>
+          <button class="start-again-btn">начать заново</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
