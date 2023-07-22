@@ -6,7 +6,7 @@
 
 body {
     background-color: #14BDAC;
-    padding: 80px 0 50px;
+    padding: 100px 0 50px;
     display: grid;
     align-content: space-between;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
     height: 100%;
     width: 100%;
     top: 0;
-    padding-top: 100px;
+    padding-top: 10vh;
     z-index: 1000;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
@@ -150,12 +150,17 @@ body {
 
 @media screen and (max-width:470px) {
     .modal-body {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         gap: 10px;
     }
-    .tic-tac-toe .cell{
+
+    .tic-tac-toe .cell {
         width: 100px;
         height: 100px;
+    }
+
+    .modal .modal-content {
+        padding: 20px 10px 30px;
     }
 
 }
