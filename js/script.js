@@ -135,5 +135,3 @@ startAgainBtn.addEventListener("click", () => {
   document.querySelector(".draw-score").innerHTML = 0;
   document.querySelector(".modal").classList.remove("show");
 });
-
-// 
