@@ -91,22 +91,17 @@ body {
   align-items: center;
   margin-bottom: 60px;
 }
-.modal-header .result-images .forDraw {
+.modal-header .result-draw {
   display: none;
 }
-.modal-header .result-images img {
+.modal-header img {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 .modal-header p {
   text-align: center;
-}
-.modal-header p {
   font-size: 40px;
-}
-.modal-header .result-images {
-  display: flex;
-  justify-content: center;
 }
 .modal-body {
   display: flex;

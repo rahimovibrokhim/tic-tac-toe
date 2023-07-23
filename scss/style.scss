@@ -72,7 +72,6 @@ body {
     }
 }
 
-// modal
 .modal {
     display: none;
     position: fixed;
@@ -106,29 +105,19 @@ body {
         align-items: center;
         margin-bottom: 60px;
 
-        .result-images {
-            .forDraw {
-                display: none;
-            }
+        .result-draw {
+            display: none;
+        }
 
-            img {
-                width: 100px;
-                height: 100px;
-            }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
         }
 
         p {
             text-align: center;
-        }
-
-
-        p {
             font-size: 40px;
-        }
-
-        .result-images {
-            display: flex;
-            justify-content: center;
         }
     }
 
@@ -147,10 +136,8 @@ body {
     }
 }
 
-
 @media screen and (max-width:470px) {
     .modal-body {
-        // flex-wrap: wrap;
         gap: 10px;
     }
 

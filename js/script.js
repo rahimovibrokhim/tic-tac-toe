@@ -59,9 +59,10 @@ function whoIsWinner() {
     x_win++;
     win = true;
     document.querySelector(".player-1-score").innerHTML = x_win;
+    document.querySelector(".winner-name").style.display = "block";
     document.querySelector(".winner-name").src = "../images/xmark.svg";
     document.querySelector(".gameResult").innerHTML = "победитель";
-    document.querySelector(".forDraw").style.display = "none";
+    document.querySelector(".result-draw").style.display = "none";
     gameOver();
   } else if (
     (circle_inbox.includes("1") &&
@@ -92,18 +93,19 @@ function whoIsWinner() {
     win = true;
     circle_win++;
     document.querySelector(".player-2-score").innerHTML = circle_win;
+    document.querySelector(".winner-name").style.display = "block";
     document.querySelector(".winner-name").src = "../images/o-mark.svg";
     document.querySelector(".gameResult").innerHTML = "победитель";
-    document.querySelector(".forDraw").style.display = "none";
+    document.querySelector(".result-draw").style.display = "none";
     gameOver();
   }
 
   if (count == 9 && win == false) {
     draw++;
-    document.querySelector(".forDraw").style.display = "block";
-    document.querySelector(".winner-name").src = "../images/xmark.svg";
     document.querySelector(".gameResult").innerHTML = "ничья";
     document.querySelector(".draw-score").innerHTML = draw;
+    document.querySelector(".result-draw").style.display = "block";
+    document.querySelector(".winner-name").style.display = "none";
     gameOver();
   }
 }
@@ -133,3 +135,5 @@ startAgainBtn.addEventListener("click", () => {
   document.querySelector(".draw-score").innerHTML = 0;
   document.querySelector(".modal").classList.remove("show");
 });
+
+// 
