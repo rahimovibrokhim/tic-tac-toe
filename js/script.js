@@ -61,7 +61,7 @@ function whoIsWinner() {
     document.querySelector(".player-1-score").innerHTML = x_win;
     document.querySelector(".winner-name").style.display = "block";
     document.querySelector(".winner-name").src = "../images/xmark.svg";
-    document.querySelector(".gameResult").innerHTML = "победитель";
+    document.querySelector(".gameResult").innerHTML = "winner";
     document.querySelector(".result-draw").style.display = "none";
     gameOver();
   } else if (
@@ -95,14 +95,14 @@ function whoIsWinner() {
     document.querySelector(".player-2-score").innerHTML = circle_win;
     document.querySelector(".winner-name").style.display = "block";
     document.querySelector(".winner-name").src = "../images/o-mark.svg";
-    document.querySelector(".gameResult").innerHTML = "победитель";
+    document.querySelector(".gameResult").innerHTML = "winner";
     document.querySelector(".result-draw").style.display = "none";
     gameOver();
   }
 
   if (count == 9 && win == false) {
     draw++;
-    document.querySelector(".gameResult").innerHTML = "ничья";
+    document.querySelector(".gameResult").innerHTML = "draw";
     document.querySelector(".draw-score").innerHTML = draw;
     document.querySelector(".result-draw").style.display = "block";
     document.querySelector(".winner-name").style.display = "none";
